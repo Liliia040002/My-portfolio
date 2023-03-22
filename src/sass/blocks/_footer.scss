@@ -1,0 +1,104 @@
+.footer {
+    background-color: #222;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 24px;
+    color: #F2EEE0;
+    list-style-type: none;
+
+    a {
+        text-decoration: none;
+        color: #33335B;
+    }
+
+    .footer__content {
+        display: flex;
+        justify-content: center;
+        div {
+            width: 400px;
+            margin: 20px;
+            padding: 15px 100px;
+            font-weight: 700;
+            background-color: #F2EEE0;
+
+        }
+    }
+    .footer__information {
+        margin-top: 50px;
+        display: flex;
+        justify-content: center;
+        div {
+            display: flex;
+            div {
+                border: 1px solid #F2EEE0;
+            padding: 5px;
+            margin: 10px;
+            a {
+                color: #F2EEE0;
+            }
+
+            }
+        }
+    }
+    .copyright {
+        margin: 30px;
+    }
+
+    @media ( max-width: 1200px) {
+        .footer__content {
+            flex-direction: column;
+            align-items: center;
+        }
+    
+        .footer__information {
+            align-items: center;
+            
+        }
+    
+        }
+    
+    
+        @media ( max-width: 1400px) {
+                .footer__content {
+                    margin-top: 20px;
+                    flex-direction: column;
+                    align-items: center;
+                }
+            }
+    
+            @media ( max-width: 600px) {
+                
+                    .footer__content {
+                        div {
+                            padding: 15px 0;
+                        }
+                    }
+                
+            }
+
+            @media ( max-width: 500px) {
+                .footer__content {
+                    div {
+                        width: 300px;
+                    }
+                }
+            
+        
+                .footer__information {
+                    display: none;
+                    // flex-direction: column;
+                    // margin-top: 20px;
+                }
+            }
+            
+
+}
+
+

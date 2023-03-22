@@ -1,0 +1,347 @@
+.inspiration {
+    padding-top: 100px;
+    padding-bottom: 190px;
+    background-color: #222;
+    .inspiration__wraper {
+        display: grid;
+        grid-template-columns: 5fr 2fr 5fr;
+
+        font-family: 'Inter', sans-serif;
+        font-weight: 900;
+        font-size: 150px;
+        line-height: 107.52%;
+        text-transform: uppercase;
+        .inspiration__title {
+            width: 340px;
+            padding: 30px;
+            padding-left: 0;
+            
+            text-align: center;
+            color: #F2EEE0;
+        }
+        .inspiration__content {
+            width: 640px;
+            padding: 30px 0;
+           
+            display: grid;
+            grid-template-rows: repeat(1fr);
+            // &:nth-child(1) {
+            //     padding-left: 0;
+            // }
+            .inspiration__links {
+                a {
+                    text-decoration: none;
+                    
+    
+                }
+                .books {
+                    text-align: left;
+                    color: rgba(68, 105, 159, 1);
+
+                }
+                .web {
+                    color: rgba(102, 102, 141, 1);
+                    
+                }
+                .art {
+                    color: rgba(80, 62, 152, 1);
+                }
+                .music {
+                    color: rgba(67, 111, 177, 1);
+                    text-align: right;
+                }
+
+                &:hover {
+                    transform: scale(1.1);
+                }
+                
+            }
+            .web__link {
+                width: 650px;
+                display: flex;
+                margin-left: 30px;
+                img {
+                    width: 100;
+                    height: 100%;
+                    // margin-left: 66px;
+                    // margin-right: 66px;
+                }
+                .inspiration__links {
+                    
+                    height: fit-content;
+                    transform: rotate(-90deg) translateX(-310px) translateY(-60px);
+                   &:hover {
+                    transform: rotate(-90deg) translateX(-310px) translateY(-60px) scale(1.1);
+                   }
+                }
+            }
+            .art__link {
+                width: 610px;
+                display: flex;
+                .inspiration__links {
+                    height: fit-content;
+                    transform: rotate(-90deg) translateX(-90px) translateY(-100px);
+                    &:hover {
+                        transform: rotate(-90deg) translateX(-90px) translateY(-100px) scale(1.1);
+                       }
+                }
+                img {
+                    transform: translateY(170px) translateX(-160px);
+                }
+
+            }
+            .inspiration__links__music {
+                width: 610px;
+                display: flex;
+                align-items: flex-end;
+                justify-content: flex-end;
+            }
+        }
+    }
+
+    @media ( max-width: 1600px) {
+        .container {
+            max-width: 1400px;
+            .inspiration__wraper {
+                font-size: 100px;
+                line-height: 120px;
+                .inspiration__title {
+                    width: 200px;
+                    padding-right: 0;
+                }
+                .inspiration__content {
+                    width: 550px;
+                    .web__link {
+                        width: 550px;
+                        img {
+                            height: 450px;
+                        }
+                        // .inspiration__links {
+                        //     transform: rotate(-90deg) translateX(-310px) translateY(50px);
+                        // }
+                        // img {
+                        //     transform: translateX(50px) translateY(28px);
+                        //     width: 330px;
+                        //     height: 460px;
+                        // }
+                    }
+                    
+                }
+                .art__link {
+                    .inspiration__links {
+                        transform: rotate(-90deg) translateX(-65px) translateY(-50px);
+                    }
+              
+                
+
+
+                    img {
+                        transform: translateY(15px) translateX(-100px);
+                    }
+                }
+                .inspiration__links__music {
+                    width: 570px;
+                }
+                
+            }
+        }
+            
+    }
+
+    @media ( max-width: 1440px) {
+        .container {
+            width: 1300px;
+            .inspiration__wraper {
+                width: 1300px;
+                .web__link {
+                    .inspiration__links {
+                        transform: rotate(-90deg) translateX(-270px) translateY(-60px);
+                    }
+                }
+                .art__link {
+                    img {
+                        width: 430px;
+                    }
+                }
+            }
+        }
+    }
+
+    @media ( max-width: 1200px) {
+        .container {
+            width: 1100px;
+
+            .inspiration__wraper {
+                width: 1100px;
+                grid-template-columns: 200px 450px 450px;
+                .inspiration__title {
+                    grid-column: 1 / 2;
+                    grid-row: 1 / 2;
+                }
+                .inspiration__content__volcano {
+                    grid-column: 2 / 3;
+                }
+
+                .inspiration__links__music {
+                    justify-content: center;
+                }
+                .art__link {
+                    .inspiration__links {
+                        transform: rotate(-90deg) translateX(-65px) translateY(-150px);
+                    }
+                    img {
+                        transform: translateY(15px) translateX(-200px);
+                    }
+                }
+            }
+        }
+    }
+
+    @media ( max-width: 1024px) {
+        .container {
+            width: 900px;
+            .inspiration__wraper {
+                grid-template-columns: 200px 500px 200px;
+                width: 900px;
+                margin-left: 100px;
+                .art__link {
+                    .inspiration__links {
+                        transform: rotate(-90deg) translateX(-65px) translateY(-190px);
+                        &:hover {
+                            transform: rotate(-90deg) translateX(-65px) translateY(-190px) scale(1.1); 
+                        }   
+                    }
+                    img {
+                        display: none;
+                    }
+                }
+                .inspiration__links__music {
+                    transform: translateX(-620px) translateY(460px);
+                    &:hover {
+                        transform: translateX(-620px) translateY(460px) scale(1.1);
+                    }
+                }
+                .web__link {
+                    .inspiration__links {
+                        transform: rotate(-90deg) translateX(-370px) translateY(-60px);
+                        &:hover {
+                            transform: rotate(-90deg) translateX(-370px) translateY(-60px) scale(1.1);  
+                        }
+                    }
+                }
+                .inspiration__content__men {
+                    display: block;
+                    width: 0;
+                }
+            }
+            
+        }
+    }
+
+    @media ( max-width: 800px) {
+        .container {
+            width: 700px;
+            .inspiration__wraper {
+                margin-left: 0;
+            }
+        }
+    }
+
+    @media ( max-width: 600px) {
+       
+            padding-bottom: 100px;
+            .container {
+                width: 500px;
+                .inspiration__wraper {
+                    width: 500px;
+                    grid-template-columns: 200px 400px;
+    
+                    font-size: 80px;
+                    .inspiration__content {
+                        grid-column: 2 / 3;
+                        grid-row: 1 / 3;
+                        
+                        // display: block;
+                    }
+                    .inspiration__content__volcano {
+                        display: block;
+                        width: 300px;
+    
+                    }
+                    .art__link {
+                        display: block;
+                        width: 300px;
+                        .inspiration__links {
+                            transform: rotate(0deg) translateX(0px) translateY(0px);
+                            &:hover {
+                                transform: rotate(0deg) translateX(0px) translateY(0px) scale(1.1);
+                            }
+                        }
+                    }
+                    .web__link {
+                        margin-left: 0;
+                        margin-top: 40px;
+                        display: block;
+                        width: 300px;
+                        
+                        img {
+                            display: none;
+                           }
+                           .inspiration__links {
+                            transform: rotate(0deg) translateX(0px) translateY(0px);
+                            &:hover {
+                                transform: rotate(0deg) translateX(0px) translateY(0px) scale(1.1);
+                                }
+                            }
+                   
+                    }
+                    .inspiration__content__men {
+                        margin-top: 320px;
+                        display: block;
+                    }
+                    .inspiration__links__music {
+                        margin-top: 40px;
+                        display: block;
+                        width: 300px;
+                        transform:  translateX(0px) translateY(0px); 
+                        &:hover {
+                            transform: scale(1.1);
+                        }
+                    }
+                   
+                      
+                }    
+            }
+        
+        }
+    
+        @media ( max-width: 500px) {
+            .container {
+                width: 300px;
+                .inspiration__wraper {
+                    width: 300px;
+                    grid-template-columns: 100px 200px;
+                    font-size: 50px;
+                    line-height: 70px;
+                    margin-left: 0px;
+                    margin-right: 50px;
+
+                    .inspiration__title {
+                        width: 100px;
+                    }
+                    .web__link {
+                        margin-top: 30px;
+                    }
+                    .inspiration__content__men {
+                        margin-top: 180px;
+                        .inspiration__links__music {
+                            margin-top: 30px;
+                        }
+                    }
+
+                }
+            }
+        }
+
+
+    }
