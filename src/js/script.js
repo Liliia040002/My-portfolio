@@ -27,6 +27,8 @@ window.addEventListener('DOMContentLoaded', () => {
 $('.education__content').slick({
     slidesToShow: 5,
     slidesToScroll: 1,
+    // Infinity: false,
+    // respondTo: window,
     prevArrow: '<button type="button" class="slick-prev"> <img src="../icons/arrowLeft.svg"></img> </button>',
     nextArrow:'<button type="button" class="slick-next"> <img src="../icons/arrowRight.svg"></img> </button>',
     responsive: [
@@ -75,7 +77,7 @@ $('.education__content').slick({
         {
             breakpoint: 768,
             settings: {
-              slidesToShow: 2,
+              slidesToShow: 1,
               centerPadding: '60px',
               arrows: false,
               dots: true,
@@ -92,16 +94,16 @@ $('.education__content').slick({
 
             }
           },
-          {
-            breakpoint: 425,
-            settings: {
-              slidesToShow: 1,
-              centerPadding: '60px',
-              arrows: false,
-              dots: true,
+          // {
+          //   breakpoint: 500,
+          //   settings: {
+          //     slidesToShow: 1,
+          //     centerPadding: '60px',
+          //     arrows: false,
+          //     dots: true,
 
-            }
-          }
+          //   }
+          // }
       ]
 });
 
@@ -367,16 +369,16 @@ $('.close').on('click', function () {
 // } });
 
 
-if( window.innerWidth <= 900 ){
+// if( window.innerWidth <= 900 ){
   
-  $('.portfolio__wraper__mobile').removeClass('portfolio__wraper__mobile').addClass('portfolio__wraper__mobile_active');
-} else {
-  //не выполнять
-} ;
+//   $('.portfolio__wraper__mobile').removeClass('portfolio__wraper__mobile').addClass('portfolio__wraper__mobile_active');
+// } else {
+//   //не выполнять
+// } ;
 
-if( window.innerWidth >= 900 ){
-  $('.portfolio__wraper').removeClass('portfolio__wraper_active').addClass('portfolio__wraper');
+// if( window.innerWidth >= 900 ){
+//   $('.portfolio__wraper').removeClass('portfolio__wraper_active').addClass('portfolio__wraper');
   
-} else {
-  //не выполнять
-} ;
+// } else {
+//   //не выполнять
+// } ;

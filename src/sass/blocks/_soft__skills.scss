@@ -88,4 +88,171 @@
             }
         }
     }
-}
+
+    @media ( max-width: 1400px) {
+        .soft__skill__puzzle {
+            margin-left: 225px;
+            width: 850px;
+            flex-wrap: wrap ;
+            justify-content: flex-end;
+            li:nth-child(2) {
+                transform: translateY(-45px) translateX(5px);
+                // .description {
+                //     top: 50%;
+                //     left: 15%;
+                }
+            li:nth-child(3) {
+                transform: translateX(10px);
+                // .description {
+                //     top: 35%;
+                //     left: 20%;
+                    
+            }
+               li:nth-child(4) {
+                transform: translateY(-40px) translateX(20px) ;
+                .description {
+                    top: 40%;
+               }
+                img {
+                    width: 280px;
+                }
+              
+                }
+                li:nth-child(5) {
+                transform: translateX(10px);
+                .description {
+                    top: 25%;
+               }
+                img {
+                    width: 280px;
+                }
+        
+                }
+            }
+    }
+
+    @media ( max-width: 1200px) {
+        .soft__skill__puzzle {
+            margin-left: 50px;
+        }
+    }
+
+    @media ( max-width: 1024px) {
+        .soft__skill__puzzle {
+            margin-left: 0;
+        }
+    }
+
+
+    @media ( max-width: 900px) {
+        .soft__skill__puzzle {
+            margin-left: 90px;
+            width: 600px;
+            li:nth-child(3) {
+                transform: translateX(5px);
+                // .description {
+                //     top: 35%;
+                //     left: 20%;
+                    
+                // }
+            }
+            li:nth-child(4) {
+                transform: translateY(-45px) translateX(10px) ;
+                .description {
+                    top: 50%;
+               }
+                img {
+                    width: 310px;
+                }
+              
+                }
+                li:nth-child(5) {
+                transform: translateX(-277px) translateY(-5px);
+            //     .description {
+            //         top: 25%;
+            //    }
+             
+           
+           
+        }
+    }
+
+
+    }
+
+    @media ( max-width: 800px) {
+        .soft__skill__puzzle {
+            margin-left: 0;
+        }
+    }
+
+    @media ( max-width: 600px) {
+        .soft__skill__puzzle {
+            width: 400px;
+            flex-direction: column;
+            align-items: center;
+            margin-left: 100px;
+            li:nth-child(2) {
+                transform: translateY(1px) translateX(1px);
+                .description {
+                    top: 30%;
+                    width: 200px;
+                }
+                img {
+                    transform: rotate(90deg);
+                }
+                }
+            li:nth-child(3) {
+                transform: translateX(-45px) translateY(15px);
+                .description {
+                    top: 30%;
+                    left: 25%;
+                }
+                img {
+                    transform: rotate(90deg);
+                }
+                    
+            }
+               li:nth-child(4) {
+                transform: translateY(20px) translateX(0px) ;
+                .description {
+                    top: 30%;
+                    left: 10%;
+                }
+                img {
+                    transform: rotate(90deg);
+                }
+            }
+              
+                li:nth-child(5) {
+                transform: translateX(-38px) translateY(30px);
+                .description {
+                    top: 40%;
+                    width: 200px;
+               }
+                img {
+                    width: 300px;
+                    transform: rotate(90deg);
+                }
+        
+                }
+        }
+    }
+
+    @media ( max-width: 600px) {
+        .soft__skill__puzzle {
+            width: 300px;
+            margin-left: 0;
+        }
+    }
+
+
+}   
+            
+          
+          
+         
+        
+
+        
+

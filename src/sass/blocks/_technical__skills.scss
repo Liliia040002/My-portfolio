@@ -1,7 +1,7 @@
 .technical__skills {
     background-color: #222; 
     padding: 100px 0;
-    .container {
+    .technical__skills__wraper {
         display: flex;
         justify-content: space-between;
     }
@@ -16,7 +16,7 @@
             flex-direction: row-reverse;
             justify-content: flex-end;
             align-items: center;
-            .title__experience__accent {
+            .title__technical__accent {
                 height: fit-content;
                 font-family: 'Imbue', serif;
                 font-weight: 500;
@@ -29,7 +29,7 @@
                 color: #F2EEE0;
                 transform: rotate(90deg) translateY(15px);
             }
-            .title__experience__main {
+            .title__technical__main {
                 font-family: 'Inter', sans-serif;
                 font-weight: 900;
                 font-size: 80px;
@@ -232,10 +232,62 @@
             
         }
     }
+
+
+    @media ( max-width: 1200px) {
+        .technical__skills__wraper {
+            flex-direction: column;
+            .technical__skills__content {
+                width: 100%;
+            }
+            .technical__skills__logo {
+                width: 100%;
+                justify-content: center;
+                img {
+                    width: 7%;
+                }
+            }
+        }
+    } 
+    
+    @media ( max-width: 768px) {
+        .technical__skills__logo {
+            display: none;
+        }
+    }
+
+    @media ( max-width: 500px) {
+       .container {
+        margin-left: 40px;
+       }
+            .technical__skills__wraper{
+                width: 400px;
+                justify-content: center;
+                .title__technical__skills {
+                    margin-left: 30px;
+                    justify-content: center;
+                    .title__technical__accent {
+                        font-size: 25px;
+                        line-height: 25px;
+                    }
+                    .title__technical__main {
+                        font-size: 60px;
+                        line-height: 70px;
+                        margin-right: 5px;
+                    }
+                }
+                .description {
+                    margin: 0 auto;
+                }
+            
+        }
+    }
+
+    @media ( max-width: 500px) {
+        .technical__skills__wraper {
+        width: 100%;
+       }
+    }
+
 }
-
-
-
-
-
 
