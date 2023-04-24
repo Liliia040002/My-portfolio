@@ -108,12 +108,12 @@ $('.education__content').slick({
 });
 
 
-  // $(document).ready(function(){
-  //   $(window).bind("resize", resizeWindow);
-  //   function resizeWindow(e){
-  //     let newWindowWidth = $(window).width();
-  //   }
-  //   });
+  $(document).ready(function(){
+    $(window).bind("resize", resizeWindow);
+    function resizeWindow(e){
+      let newWindowWidth = $(window).width();
+    }
+    });
 
   function toggleSlide(item) {
     $(item).each(function(i) {

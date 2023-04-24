@@ -1,7 +1,7 @@
 
 .inspiration__overlay__art {
     display: none;
-    padding-top: 300px;
+    padding-top: 150px;
     position: fixed;
     top: 0;
     left: 0;
@@ -11,16 +11,16 @@
         .modals {
        
         width: 878px;
-        height: 523px;
+        min-height: 523px;
         display: flex;
-        padding-top: 100px;
+        // padding-top: 100px;
         margin: 0 auto;
 
        
 
        .modal__content__wraper {
         
-            height: 380px; 
+            min-height: 450px; 
             padding: 40px;
             display: flex;
             background-color: #F2EEE0;
@@ -31,7 +31,7 @@
                 display: flex;
             .modal__content {
                 width: 344px;
-                height: 346px;
+                min-height: 346px;
                 border: 2px solid rgba(51, 51, 91, 1);
                 margin: 20px;
 
@@ -121,7 +121,7 @@
 
 .inspiration__overlay__web {
     display: none;
-    padding-top: 300px;
+    padding-top: 150px;
     position: fixed;
     top: 0;
     left: 0;
@@ -131,16 +131,16 @@
     .modals {
        
         width: 878px;
-        height: 523px;
+        min-height: 523px;
         display: flex;
-        padding-top: 100px;
+        // padding-top: 100px;
         margin: 0 auto;
 
        
 
        .modal__content__wraper {
         
-            height: 380px; 
+            min-height: 450px; 
             padding: 40px;
             display: flex;
             background-color: #F2EEE0;
@@ -151,7 +151,7 @@
                 display: flex;
             .modal__content {
                 width: 344px;
-                height: 346px;
+                min-height: 346px;
                 border: 2px solid rgba(51, 51, 91, 1);
                 margin: 20px;
 
@@ -241,7 +241,7 @@
 
 .inspiration__overlay__books {
     display: none;
-    padding-top: 300px;
+    padding-top: 150px;
     position: fixed;
     top: 0;
     left: 0;
@@ -251,16 +251,16 @@
     .modals {
        
         width: 878px;
-        height: 523px;
+        min-height: 523px;
         display: flex;
-        padding-top: 100px;
+        // padding-top: 100px;
         margin: 0 auto;
 
        
 
        .modal__content__wraper {
         
-            height: 380px; 
+            min-height: 450px; 
             padding: 40px;
             display: flex;
             background-color: #F2EEE0;
@@ -271,7 +271,7 @@
                 display: flex;
             .modal__content {
                 width: 344px;
-                height: 346px;
+                min-height: 346px;
                 border: 2px solid rgba(51, 51, 91, 1);
                 margin: 20px;
 
@@ -361,7 +361,7 @@
 
 .inspiration__overlay__music {
     display: none;
-    padding-top: 300px;
+    padding-top: 150px;
     position: fixed;
     top: 0;
     left: 0;
@@ -371,16 +371,16 @@
     .modals {
        
         width: 878px;
-        height: 523px;
+        min-height: 523px;
         display: flex;
-        padding-top: 100px;
+        // padding-top: 100px;
         margin: 0 auto;
 
        
 
        .modal__content__wraper {
         
-            height: 380px; 
+            min-height: 450px; 
             padding: 40px;
             display: flex;
             background-color: #F2EEE0;
@@ -390,8 +390,8 @@
             
                 display: flex;
             .modal__content {
-                width: 344px;
-                height: 346px;
+                max-width: 344px;
+                min-height: 346px;
                 border: 2px solid rgba(51, 51, 91, 1);
                 margin: 20px;
 
@@ -477,3 +477,232 @@
     }
 
 }
+
+
+@media ( max-width: 900px) {
+    .modals {
+        
+        .modal__content__wraper {
+            width: 810px;
+            padding-left: 20px;
+            padding-right: 20px;
+            margin-left: 50px;
+            flex-direction: column-reverse;
+            align-items: flex-start;
+        }
+    } 
+
+    }
+
+
+    @media ( max-width: 768px) {
+        .modals {
+            // height: 800px;
+            .modal__content__wraper {
+                height: 900px;
+                width: 450px;
+                padding-left: 28px;
+                padding-right: 28px;
+                margin-left: 180px;
+                .modal__contents {
+                    flex-direction: column;
+                    height: 900;
+                }
+               
+                // align-items: flex-start;
+            }
+        } 
+    
+        }
+
+    // @media ( max-width: 600px) {
+    //   .overlay {
+    //     .inspiration__overlay__music {
+    //         padding-top: 10px;
+    //     }  
+    //   } 
+        
+    // }
+
+@media ( max-width: 500px) {                   
+        .inspiration__overlay__books {
+          
+            padding-top: 10px;
+            
+            .modals {
+                flex-direction: column-reverse; 
+                width: 300px;
+                margin-left: 40px;
+                .modal__content__wraper {
+                    justify-content: flex-end;
+                    margin: 0;
+                  
+                    width: 300px;
+                    padding: 20px;
+                    .modal__contents {
+                        width: 250px;
+                        .modal__content {
+                            width: 250px;
+                            margin-left: 5px;
+                            grid-template-rows: 200px 50px;
+
+                            display: flex;
+                            flex-direction: column;
+                            .link__content {
+                                padding: 10px;
+                                border-left: none;
+                                border-top: 2px solid #33335b;
+                                a {
+                                    writing-mode: horizontal-tb;
+                                    padding: 0;
+                                }
+                            }
+                        }
+                    }
+              
+                }
+                .close {
+                    margin-left: 270px;
+                    
+                }
+            }
+           
+
+        }  
+        
+        .inspiration__overlay__web {
+            padding-top: 10px;
+            
+            .modals {
+                flex-direction: column-reverse; 
+                width: 300px;
+                margin-left: 40px;
+                .modal__content__wraper {
+                    justify-content: flex-end;
+                    margin: 0;
+                  
+                    width: 300px;
+                    padding: 20px;
+                    .modal__contents {
+                        width: 250px;
+                        .modal__content {
+                            width: 250px;
+                            margin-left: 5px;
+                            grid-template-rows: 200px 50px;
+
+                            display: flex;
+                            flex-direction: column;
+                            .link__content {
+                                padding: 10px;
+                                border-left: none;
+                                border-top: 2px solid #33335b;
+                                a {
+                                    writing-mode: horizontal-tb;
+                                    padding: 0;
+                                }
+                            }
+                        }
+                    }
+              
+                }
+                .close {
+                    margin-left: 270px;
+                    
+                }
+            }
+
+        }
+
+        .inspiration__overlay__art {
+            padding-top: 10px;
+            
+            .modals {
+                flex-direction: column-reverse; 
+                width: 300px;
+                margin-left: 40px;
+                .modal__content__wraper {
+                    justify-content: flex-end;
+                    margin: 0;
+                  
+                    width: 300px;
+                    padding: 20px;
+                    .modal__contents {
+                        width: 250px;
+                        .modal__content {
+                            width: 250px;
+                            margin-left: 5px;
+                            grid-template-rows: 200px 50px;
+
+                            display: flex;
+                            flex-direction: column;
+                            .link__content {
+                                padding: 10px;
+                                border-left: none;
+                                border-top: 2px solid #33335b;
+                                a {
+                                    writing-mode: horizontal-tb;
+                                    padding: 0;
+                                }
+                            }
+                        }
+                    }
+              
+                }
+                .close {
+                    margin-left: 270px;
+                    
+                }
+            }
+
+        }
+        
+        .inspiration__overlay__music {
+            padding-top: 10px;
+            
+            .modals {
+                flex-direction: column-reverse; 
+                width: 300px;
+                margin-left: 40px;
+                .modal__content__wraper {
+                    justify-content: flex-end;
+                    margin: 0;
+                  
+                    width: 300px;
+                    padding: 20px;
+                    .modal__contents {
+                        width: 250px;
+                        .modal__content {
+                            width: 250px;
+                            margin-left: 5px;
+                            grid-template-rows: 200px 50px;
+
+                            display: flex;
+                            flex-direction: column;
+                            .link__content {
+                                padding: 10px;
+                                border-left: none;
+                                border-top: 2px solid #33335b;
+                                a {
+                                    writing-mode: horizontal-tb;
+                                    padding: 0;
+                                }
+                            }
+                        }
+                    }
+              
+                }
+                .close {
+                    margin-left: 270px;
+                    
+                }
+            }
+
+        }
+
+                    
+    }
+                  
+     
+  
+            
+
