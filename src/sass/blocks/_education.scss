@@ -3,42 +3,20 @@
     // padding-top: 50px;
     padding-bottom: 190px;
 
+
     .container {
        
         width: 1590px;
+
         
     }
 
-    .slick-prev {
-        background: none;
-        border: none;
-        margin-right: 50px;
-        cursor: pointer;
-        img {
-            width: 100px;
-            height: 100px;
-        }
-        &:hover {
-            transform: translateX(-20px);
-        }
-    }
-
-    .slick-next {
-        background: none;
-        border: none;
-        margin-left: 50px;
-        cursor: pointer;
-        img {
-            width: 100px;
-            height: 100px;
-        }
-        &:hover {
-            transform: translateX(20px);
-        }
-    }
 
 
+  
 
+
+   
 
     .education__title__main {
         padding-top: 150px;
@@ -69,8 +47,9 @@
  
     .education__content {
      
-        display: flex;
-        justify-content: space-around;
+        // display: flex;
+        // justify-content: space-around;
+        flex-direction: column;
         // margin: 0 50px;
         margin-top: 70px;
         .education__item {
@@ -286,38 +265,7 @@
         .education__content {
             flex-direction: column;
         }
-        .slick-dots {
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            li {
-                margin: 5px;
-                list-style-type: none;
-                border-radius: 50%;
-                
-                button {
-                    font-size: 0;
-                    width: 15px;
-                    height: 15px;
-                    border-radius: 50%;
-                    background-color: #33335B;
-                    cursor: pointer;
-                    border: none;
-                    &:hover {
-                        box-shadow: 0px 4px 10px rgb(78, 78, 78);
-                    }
-                   
-                }
-            }
-            .slick-active {
-                button {
-                    background-color: #f2eee08b;
-                    &:hover {
-                        box-shadow: 0px 4px 10px rgb(78, 78, 78);
-                    }
-                }
-            }
-        }   
+       
     }
     @media (max-width: 425px) {
 

@@ -29,8 +29,10 @@ $('.education__content').slick({
     slidesToScroll: 1,
     // Infinity: false,
     // respondTo: window,
-    prevArrow: '<button type="button" class="slick-prev"> <img src="../icons/arrowLeft.svg"></img> </button>',
-    nextArrow:'<button type="button" class="slick-next"> <img src="../icons/arrowRight.svg"></img> </button>',
+    // prevArrow: '<button type="button" class="slick-prev"> <img src="../icons/arrowLeft.svg"></img> </button>',
+    // nextArrow:'<button type="button" class="slick-next"> <img src="../icons/arrowRight.svg"></img> </button>',
+    arrows: false,
+    dots: true,
     responsive: [
       {
         breakpoint: 1600,
@@ -61,8 +63,8 @@ $('.education__content').slick({
           settings: {
             slidesToShow: 2,
             centerPadding: '40px',
-            arrows: false,
-            dots: true,
+            // arrows: false,
+            // dots: true,
           }
         },
         {
@@ -70,8 +72,8 @@ $('.education__content').slick({
           settings: {
             slidesToShow: 2,
             centerPadding: '60px',
-            arrows: false,
-            dots: true,
+            // arrows: false,
+            // dots: true,
           }
         },
         {
@@ -79,8 +81,8 @@ $('.education__content').slick({
             settings: {
               slidesToShow: 1,
               centerPadding: '60px',
-              arrows: false,
-              dots: true,
+              // arrows: false,
+              // dots: true,
 
             }
           },
@@ -89,8 +91,8 @@ $('.education__content').slick({
             settings: {
               slidesToShow: 1,
               centerPadding: '60px',
-              arrows: false,
-              dots: true,
+              // arrows: false,
+              // dots: true,
 
             }
           },
